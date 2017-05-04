@@ -1,3 +1,4 @@
-$("li").each(function (index, element) {
-    console.log(index + " : " + $(element).text());
-});
+$("li").css("color", "blue")
+       .slideUp(1000)
+       .slideDown(1000)
+       .attr("title", "My Title");
