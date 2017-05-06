@@ -46,3 +46,6 @@ var config = {
     "name": "MY DIV"
 };
 
+// DOM Manipulation with .wrap() method
+$("div").wrap("<div class='.container'></div>");
+$("div").append("<h3>add a new parent div container</h3>");
