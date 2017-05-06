@@ -32,3 +32,17 @@ result += "Years = " + employeesJSON[1].years + "<br>"
 $("#result").html(result);
 
 // DOM Manipulation methods
+// var returnAttr = $("div").attr("title");
+// console.log(returnAttr);
+
+// $("div").each(function() {
+//     console.log($(this).attr("title"));
+// });
+
+// DOM Manipulation methods with JSON object
+var config = {
+    "title": "New DIV Title",
+    "style": "border: 1px solid red",
+    "name": "MY DIV"
+};
+
