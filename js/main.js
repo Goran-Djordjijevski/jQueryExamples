@@ -30,3 +30,5 @@ result += "Gender = " + employeesJSON[1].gender + "<br>";
 result += "Years = " + employeesJSON[1].years + "<br>"
 
 $("#result").html(result);
+
+// DOM Manipulation methods
