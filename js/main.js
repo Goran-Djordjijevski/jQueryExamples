@@ -49,3 +49,38 @@ var config = {
 // DOM Manipulation with .wrap() method
 $("div").wrap("<div class='.container'></div>");
 $("div").append("<h3>add a new parent div container</h3>");
+
+// Add or remove class
+$("#btn1").on("click", function() {
+    $("h1").addClass("colorClass");
+});
+
+$("#btn2").on("click", function() {
+    $("h1").removeClass("colorClass");
+});
+
+$("#btn3").on("click", function() {
+    $("h1").addClass("colorClass italicClass");
+});
+
+$("#btn4").on("click", function() {
+    $("h1").removeClass("colorClass italicClass");
+});
+
+$("#btn5").on("click", function() {
+    $("h1").addClass("colorClass italicClass boldClass");
+});
+
+$("#btn6").on("click", function() {
+    $("h1").removeClass("colorClass italicClass boldClass");
+});
+
+$("#btn7").on("click", function() {
+    $("h1").toggleClass("colorClass italicClass boldClass");
+});
+
+$("input[type='text']").each(function() {
+    $(this).focus(function() {
+        $(this).toggleClass("textBoxStyle");
+    });
+});
