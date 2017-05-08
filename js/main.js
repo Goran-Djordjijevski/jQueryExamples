@@ -115,4 +115,3 @@ function getDivId(helpIcon) {
     return helpIconId.replace("img", "div");
 }
 
-// samo test komentar
