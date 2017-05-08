@@ -29,7 +29,7 @@ result += "Last Name = " + employeesJSON[1].lastName + "<br>";
 result += "Gender = " + employeesJSON[1].gender + "<br>";
 result += "Years = " + employeesJSON[1].years + "<br>"
 
-$("#result").html(result);
+// $("#result").html(result);
 
 // DOM Manipulation methods
 // var returnAttr = $("div").attr("title");
@@ -47,8 +47,8 @@ var config = {
 };
 
 // DOM Manipulation with .wrap() method
-$("div").wrap("<div class='.container'></div>");
-$("div").append("<h3>add a new parent div container</h3>");
+// $("div").wrap("<div class='.container'></div>");
+// $("div").append("<h3>add a new parent div container</h3>");
 
 // Add or remove class
 $("#btn1").on("click", function() {
@@ -83,4 +83,22 @@ $("input[type='text']").each(function() {
     $(this).focus(function() {
         $(this).toggleClass("textBoxStyle");
     });
+});
+
+// jQuery change event
+// $("#ddlCity").change(function() {
+//     var selectedValue = $(this).val();
+//     $("#divResult").html(selectedValue);
+// });
+
+$("input").change(function() {
+    var result = "";
+    if (result == "") {
+        result = $(this).val();
+    }
+    else {
+        result += ", " + $(this).val();
+    }
+
+    $("#divResult").html(result);
 });
