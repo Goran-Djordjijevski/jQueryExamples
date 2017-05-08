@@ -91,14 +91,25 @@ $("input[type='text']").each(function() {
 //     $("#divResult").html(selectedValue);
 // });
 
-$("input").change(function() {
-    var result = "";
-    if (result == "") {
-        result = $(this).val();
-    }
-    else {
-        result += ", " + $(this).val();
-    }
+// $("input").change(function() {
+//     var result = "";
+//     if (result == "") {
+//         result = $(this).val();
+//     }
+//     else {
+//         result += ", " + $(this).val();
+//     }
 
-    $("#divResult").html(result);
+//     $("#divResult").html(result);
+// });
+
+$("img[src='img/help.png']").mouseover(function() {
+    $("#" + getDivId(this)).fadeIn(500);
+}).mouseout(function() {
+    $("#" + getDivId(this)).fadeOut(500);
 });
+
+function getDivId(helpIcon) {
+    var helpIconId = $(helpIcon).attr("id");
+    return helpIconId.replace("img", "div");
+}
