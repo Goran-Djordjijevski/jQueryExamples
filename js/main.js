@@ -114,3 +114,5 @@ function getDivId(helpIcon) {
     var helpIconId = $(helpIcon).attr("id");
     return helpIconId.replace("img", "div");
 }
+
+// samo test komentar
