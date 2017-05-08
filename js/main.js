@@ -103,6 +103,7 @@ $("input[type='text']").each(function() {
 //     $("#divResult").html(result);
 // });
 
+// jQuery mouse events
 $("img[src='img/help.png']").mouseover(function() {
     $("#" + getDivId(this)).fadeIn(500);
 }).mouseout(function() {
