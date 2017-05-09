@@ -116,22 +116,23 @@ $("input[type='text']").each(function() {
 // }
 
 // jQuery detect which mouse button is clicked
-$("#btn").mouseup(function(event) {
-    var whichButton = "";
-    switch (event.which) {
-        case 1:
-            whichButton = "Left button clicked"
-            break;
-        case 2:
-            whichButton = "Middle button clicked"
-            break;    
-        case 3:
-            whichButton = "Right button clicked"
-            break;
-        default:
-            whichButton = "Invalid button clicked"
-            break;
-    }
+// $("#btn").mouseup(function(event) {
+//     var whichButton = "";
+//     switch (event.which) {
+//         case 1:
+//             whichButton = "Left button clicked"
+//             break;
+//         case 2:
+//             whichButton = "Middle button clicked"
+//             break;    
+//         case 3:
+//             whichButton = "Right button clicked"
+//             break;
+//         default:
+//             whichButton = "Invalid button clicked"
+//             break;
+//     }
 
-    $("#divResult").html(whichButton);
-});
+//     $("#divResult").html(whichButton);
+// });
+
