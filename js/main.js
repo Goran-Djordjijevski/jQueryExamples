@@ -104,14 +104,34 @@ $("input[type='text']").each(function() {
 // });
 
 // jQuery mouse events
-$("img[src='img/help.png']").mouseover(function() {
-    $("#" + getDivId(this)).fadeIn(500);
-}).mouseout(function() {
-    $("#" + getDivId(this)).fadeOut(500);
+// $("img[src='img/help.png']").mouseover(function() {
+//     $("#" + getDivId(this)).fadeIn(500);
+// }).mouseout(function() {
+//     $("#" + getDivId(this)).fadeOut(500);
+// });
+
+// function getDivId(helpIcon) {
+//     var helpIconId = $(helpIcon).attr("id");
+//     return helpIconId.replace("img", "div");
+// }
+
+// jQuery detect which mouse button is clicked
+$("#btn").mouseup(function(event) {
+    var whichButton = "";
+    switch (event.which) {
+        case 1:
+            whichButton = "Left button clicked"
+            break;
+        case 2:
+            whichButton = "Middle button clicked"
+            break;    
+        case 3:
+            whichButton = "Right button clicked"
+            break;
+        default:
+            whichButton = "Invalid button clicked"
+            break;
+    }
+
+    $("#divResult").html(whichButton);
 });
-
-function getDivId(helpIcon) {
-    var helpIconId = $(helpIcon).attr("id");
-    return helpIconId.replace("img", "div");
-}
-

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Learning</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td style="vertical-align:middle">
+                <input id="txtFirstName" type="text" class="inputRequired" />
+
+            </td>
+            <td><img id="imgFirstNameHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divFirstNameHelp" style="display:none">
+                    First Name as shown in passport</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input id="txtLastName" type="text" class="inputRequired" />
+            </td>
+            <td><img id="imgLastNameHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divLastNameHelp" style="display:none">
+                    Last Name as shown in passport</div>
+            </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>
+                <select id="ddlCity" class="inputRequired">
+                <option value="Select">Select</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Sydney">Sydney</option>
+            </select>
+            </td>
+            <td><img id="imgCityHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divCityHelp" style="display:none">
+                    Your residence city</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Favourite Color</td>
+            <td>
+                <input id="radioRed" name="color" type="radio" value="Red" class="inputRequired" />Red
+                <input id="radioGreen" name="color" type="radio" value="Green" class="inputRequired" />Green<br />
+                <input id="radioBlue" name="color" type="radio" value="Blue" class="inputRequired" />Blue
+            </td>
+            <td><img id="imgColorHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divColorHelp" style="display:none">
+                    Your Favourite Color</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Contact Method</td>
+            <td>
+                <input id="chkBoxEmail" type="checkbox" value="Email" class="inputRequired" />Email
+                <input id="chkBoxPhone" type="checkbox" value="Phone" class="inputRequired" />Phone<br />
+                <input id="chkBoxSocialMedia" type="checkbox" value="Social Media" class="inputRequired" />Social Media
+            </td>
+            <td><img id="imgContactMethodHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divContactMethodHelp" style="display:none">
+                    How should we contact you</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comments
+            </td>
+            <td>
+                <textarea id="txtComments" class="inputRequired"></textarea>
+            </td>
+            <td><img id="imgCommentsHelp" src="img/help.png" /></td>
+            <td>
+                <div id="divCommentsHelp" style="display:none">
+                    Your comments please</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btnSubmit" type="button" value="Submit" />
+            </td>
+            <td>
+                <div id="divResult"></div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
